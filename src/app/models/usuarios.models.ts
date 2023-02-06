@@ -3,12 +3,12 @@ export  interface Usuarios {
   nombre: string;
   apellido: string;
   correoElectronico: string,
-  fechaNacimiento: Date,
+  fechaNacimiento: string,
   telefono: string,
   paisResidencia: string,
   serContactado: boolean
 }
 
-export interface CreateUsuariosDTO extends Omit<Usuarios, 'id' | 'fechaNacimiento'> {
+export interface CreateUsuariosDTO extends Omit<Usuarios, 'id'> {
 
 }

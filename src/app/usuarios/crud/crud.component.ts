@@ -20,6 +20,7 @@ export class CrudComponent implements OnInit {
     'Telefono',
     'Pais de Residencia',
     'Ser contactado',
+    'Acciones'
   ];
 
   @Output() irFormulario = new EventEmitter();
