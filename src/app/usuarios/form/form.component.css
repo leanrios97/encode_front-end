@@ -1,0 +1,17 @@
+.form-conteiner {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 80px;
+  width: 700px;
+  height: 600px;
+  position: absolute;
+  /* display: flex; */
+  /* justify-content: center; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-5%);
+}
+
+.btn-primary{
+  background: #13a4a4;
+}

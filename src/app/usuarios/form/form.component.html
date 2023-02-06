@@ -1,0 +1,58 @@
+<!-- <div>
+  <button type="button" class="btn btn-primary" id="btnVolver" >Volver</button>
+</div> -->
+<form class="form-conteiner">
+<div>
+  <div class="form-group">
+    <label for="nombre">Nombre</label>
+    <input type="text" class="form-control" id="nombre" placeholder="Ingresar Nombre" [(ngModel)= ] required>
+  </div>
+  <div class="form-group">
+    <label for="apellido">Apellido</label>
+    <input type="text" class="form-control" id="apellido" placeholder="Ingresar Apellido" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Correo Electronico</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingresar email" required>
+    <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie más.</small>
+  </div>
+
+  <div class="form-group">
+    <label for="fechaNacimiento">Fecha de nacimiento</label >
+    <input type="date" class="form-control" id="fechaNacimiento" placeholder="Ingrese fecha de nacimiento" required>
+  </div>
+
+  <div class="form-group">
+    <label for="telefono">Telefono</label>
+    <input type="number" class="form-control" id="telefono" placeholder="Ingrese el telefono" value="">
+  </div>
+
+  <div class="form-group">
+    <label for="paisResidencia"> Pais de Residencia
+      <select name="paisResidencia" id="paisResidencia" required>
+        <option >Elija su Pais</option>
+        <option value="ARG">Argentina</option>
+        <option value="BRA">Brasil</option>
+        <option value="CHL">Chile</option>
+        <option value="PRY">Paraguay</option>
+        <option value="URY">Uruguay</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label for="serContactado" class="form-group-select" >
+      <span>¿Desea recibir información? </span>
+      <input type="radio" name="si" value="1">
+      <span>Si</span>
+      <input type="radio" name="no" value="0">
+      <span>No</span>
+    </label>
+    <div>
+      <!-- <button type="submit" class="btn btn-primary" id="btnRegistrar" formaction = "" (click)="createNewUsuario()">Registrar</button> -->
+      <button type="resets" class="btn btn-primary" id="btnLimpiar">Borrar Datos</button>
+    </div>
+  </div>
+</div>
+</form>

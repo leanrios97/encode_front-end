@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 mt-10">
+      <h1>Usuarios</h1>
+      <button class="btn btn-info" >Registrar Usuario</button>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <td *ngFor="let title of titles">
+              {{ title }}
+            </td>
+          </tr>
+        </thead>
+        <tbody *ngFor="let usr of usuarios" >
+            <td>{{ usr.nombre}}</td>
+            <td> {{ usr.apellido }}</td>
+            <td> {{ usr.correoElectronico }} </td>
+            <td> {{ usr.fechaNacimiento }}</td>
+            <td> {{ usr.telefono }}</td>
+            <td> {{ usr.paisResidencia }}</td>
+            <td > {{ usr.serContactado}}</td>
+            <td> <button  type= "button" value= {{ usr.Id }} class="btnModificar btn btn-danger">Modificar</button></td>
+            <td> <button  type= "button" value= {{ usr.Id }} class="btnEliminar btn btn-warning">Eliminar</button></td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
